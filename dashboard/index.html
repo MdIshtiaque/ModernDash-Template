@@ -390,31 +390,99 @@
                     </div>
                 </div>
 
-                <!-- Real-time Activity -->
+                <!-- Goal Progress -->
                 <div class="bg-white rounded-xl p-6 border border-gray-100">
                     <div class="flex items-center justify-between mb-6">
                         <div>
-                            <h3 class="text-lg font-semibold text-gray-800">Real-time Activity</h3>
-                            <p class="text-sm text-gray-500">Live user actions</p>
+                            <h3 class="text-lg font-semibold text-gray-800">Goal Progress</h3>
+                            <p class="text-sm text-gray-500">Monthly targets & achievements</p>
                         </div>
-                        <button class="text-sm text-indigo-600 hover:text-indigo-700">View All</button>
+                        <div class="flex items-center space-x-2">
+                            <span class="text-sm text-gray-500">75% Completed</span>
+                        </div>
                     </div>
-                    <div class="space-y-6">
-                        <!-- Live Activity Items -->
-                        <div class="flex items-center space-x-4 animate-pulse">
-                            <div class="relative">
-                                <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
-                                    <i class="fas fa-shopping-cart text-green-500"></i>
+
+                    <!-- Overall Progress -->
+                    <div class="mb-8">
+                        <div class="h-3 bg-gray-100 rounded-full overflow-hidden">
+                            <div class="h-full bg-indigo-500 rounded-full relative" style="width: 75%">
+                                <div class="absolute inset-0 bg-gradient-to-r from-indigo-500 to-indigo-600"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Individual Goals -->
+                    <div class="space-y-5">
+                        <!-- Sales Target -->
+                        <div>
+                            <div class="flex items-center justify-between mb-2">
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center">
+                                        <i class="fas fa-dollar-sign text-blue-600"></i>
+                                    </div>
+                                    <span class="text-sm font-medium">Sales Target</span>
                                 </div>
-                                <div class="absolute -top-1 -right-1 w-3 h-3 bg-green-500 rounded-full border-2 border-white"></div>
+                                <span class="text-sm font-medium text-blue-600">85%</span>
                             </div>
-                            <div>
-                                <p class="text-sm font-medium">New purchase from John</p>
-                                <p class="text-xs text-gray-500">Just now</p>
+                            <div class="h-2 bg-gray-100 rounded-full overflow-hidden">
+                                <div class="h-full bg-blue-500 rounded-full" style="width: 85%"></div>
                             </div>
                         </div>
-                        <!-- Add more real-time items -->
+
+                        <!-- New Customers -->
+                        <div>
+                            <div class="flex items-center justify-between mb-2">
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center">
+                                        <i class="fas fa-users text-purple-600"></i>
+                                    </div>
+                                    <span class="text-sm font-medium">New Customers</span>
+                                </div>
+                                <span class="text-sm font-medium text-purple-600">62%</span>
+                            </div>
+                            <div class="h-2 bg-gray-100 rounded-full overflow-hidden">
+                                <div class="h-full bg-purple-500 rounded-full" style="width: 62%"></div>
+                            </div>
+                        </div>
+
+                        <!-- Customer Satisfaction -->
+                        <div>
+                            <div class="flex items-center justify-between mb-2">
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center">
+                                        <i class="fas fa-smile text-green-600"></i>
+                                    </div>
+                                    <span class="text-sm font-medium">Customer Satisfaction</span>
+                                </div>
+                                <span class="text-sm font-medium text-green-600">92%</span>
+                            </div>
+                            <div class="h-2 bg-gray-100 rounded-full overflow-hidden">
+                                <div class="h-full bg-green-500 rounded-full" style="width: 92%"></div>
+                            </div>
+                        </div>
+
+                        <!-- Monthly Tasks -->
+                        <div>
+                            <div class="flex items-center justify-between mb-2">
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-8 h-8 bg-yellow-100 rounded-lg flex items-center justify-center">
+                                        <i class="fas fa-tasks text-yellow-600"></i>
+                                    </div>
+                                    <span class="text-sm font-medium">Monthly Tasks</span>
+                                </div>
+                                <span class="text-sm font-medium text-yellow-600">78%</span>
+                            </div>
+                            <div class="h-2 bg-gray-100 rounded-full overflow-hidden">
+                                <div class="h-full bg-yellow-500 rounded-full" style="width: 78%"></div>
+                            </div>
+                        </div>
                     </div>
+
+                    <!-- Quick Add Button -->
+                    <button class="mt-6 w-full bg-gray-50 hover:bg-gray-100 text-gray-600 py-3 rounded-xl flex items-center justify-center space-x-2 transition-colors">
+                        <i class="fas fa-plus text-sm"></i>
+                        <span class="text-sm font-medium">Add New Goal</span>
+                    </button>
                 </div>
             </div>
 
